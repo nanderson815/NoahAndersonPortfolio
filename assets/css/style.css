@@ -1,7 +1,18 @@
 #headerName{
     font-size: 20px;
 }
+.navbar-fixed {
+    position: absolute;
+    /* z-index:999999999; */
+}
+
 
 #headerImage{
-    height: 480px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#parallaxTitle{
+    position: absolute;
+    z-index: 100;
 }
