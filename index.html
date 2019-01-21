@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Noah Anderson</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Compiled and minified CSS for Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -12,16 +16,46 @@
     <!-- link to style sheet -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 
+    <!-- Local JavaScript -->
+    <script src="assets/javascript/app.js" defer></script>
+</head>
+
+<body>
+    <ul class="sidenav" id="mobile-menu">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img class="responsive-img" src="assets/images/atlanta.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="assets/images/professionalPhoto.jpg"></a>
+                
+                <a href="#name"><span class="white-text name">Noah Anderson</span></a>
+                <a href="#email"><span class="white-text email">Nanderson815@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <nav class="blue darken-4">
+        <div class="container nav-wrapper">
+            <a href="#!" class="brand-logo">Noah Anderson</a>
+            <a href="#!" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
     <!-- JQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript for materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Local JavaScript -->
-    <script src="assets/javascript/app.js" defer></script>
-
-    
-</head>
-<body>
-    
 </body>
+
 </html>
