@@ -13,7 +13,7 @@ html{
 
 
 #headerImage{
-    height: 90vh;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -24,10 +24,52 @@ html{
 }
 
 #aboutMeCont, #skillsCont{
-    height: 90vh;
+    height: 100vh;
 }
 
 .skill-icons{
     font-size: 80px;
     color: #0d47a1;
+}
+
+.headerContainer{
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.slideIn{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.slideInLeft{
+    animation-duration: 3s;
+    animation-name: slideinleft;
+}
+
+@keyframes slideinleft{
+    from {
+        margin-left: -100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
