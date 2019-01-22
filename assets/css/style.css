@@ -36,6 +36,13 @@ html{
     overflow: hidden;
 }
 
+#aboutMeHeader{
+    margin-top: 50px;
+}
+
+
+/* Animations */
+
 .hidden {
     display: none;
 }
