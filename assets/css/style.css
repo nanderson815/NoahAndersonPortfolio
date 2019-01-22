@@ -48,12 +48,12 @@ html{
 }
 
 .slideIn{
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-name: slidein;
 }
 
 .slideInLeft{
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: slideinleft;
 }
 
