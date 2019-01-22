@@ -16,13 +16,17 @@ $(document).ready(function () {
 
         }
 
-        if (scrollY > 90){
+        if (scrollY > 90) {
             $('#aboutMeHeader, #aboutMeP').removeClass('hidden');
             $('#aboutMeHeader').addClass('slideIn');
             $('#aboutMeP').addClass('slideInLeft');
 
-            
-        } 
+
+        }
     })
+
+    // $('#headerName').on('click', () => {
+    //     window.scrollTo(0, 0);
+    // });
 
 });
