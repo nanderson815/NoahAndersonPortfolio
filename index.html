@@ -36,8 +36,8 @@
         </li>
         <li><a href="#aboutMeCont">About Me</a></li>
         <li><a href="#skillsCont">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#projectsCont">Projects</a></li>
+        <li><a href="#contactCont">Contact</a></li>
     </ul>
     <!-- Main Header -->
     <div class="navbar-fixed">
@@ -48,8 +48,8 @@
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#aboutMeCont">About Me</a></li>
                     <li><a href="#skillsCont">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#projectsCont">Projects</a></li>
+                    <li><a href="#contactCont">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -59,7 +59,12 @@
     <div id='headerImage' class="parallax-container">
         <div class="parallax valign-wrapper">
             <div class="row container">
-                <h1 id="parallaxTitle" class="white-text"> <span id="startText" class="hidden">Web Design </span> <span id="startText2" class="hidden">Graphic Design</span></h1>
+                <div id="parallaxTitle">
+                    <h2 class="white-text">Web Design </h2>
+                    <h2 class="white-text">Graphic Design</h2>
+                    <h2 class="white-text">SEO</h2>
+
+                </div>
             </div>
             <img id="parallaxB" src="assets/images/Website-Design-Background.png">
         </div>
@@ -118,11 +123,11 @@
                 <h2 id="skillsHeader" class="header">Skills</h2>
             </div>
             <!-- Row one -->
-            <div class="row">
+            <div id="skillsContainer" class="row">
                 <div class="col m4">
                     <div class="center promo promo-example">
                         <i class="material-icons skill-icons">flash_on</i>
-                        <p class="promo-caption">Speeds up development</p>
+                        <p class="promo-caption">User Focused</p>
                         <p class="light center">We did most of the heavy lifting for you to provide a default stylings
                             that
                             incorporate our custom components.</p>
@@ -131,7 +136,7 @@
                 <div class="col m4">
                     <div class="center promo promo-example">
                         <i class="material-icons skill-icons">group</i>
-                        <p class="promo-caption">User Experience Focused</p>
+                        <p class="promo-caption">Team Oriented</p>
                         <p class="light center">By utilizing elements and principles of Material Design, we were able
                             to create a
                             framework that focuses on User Experience.</p>
@@ -140,37 +145,7 @@
                 <div class="col m4">
                     <div class="center promo promo-example">
                         <i class="material-icons skill-icons">settings</i>
-                        <p class="promo-caption">Easy to work with</p>
-                        <p class="light center">We have provided detailed documentation as well as specific code
-                            examples to help
-                            new users get started.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Row two -->
-            <div class="row">
-                <div class="col m4">
-                    <div class="center promo promo-example">
-                        <i class="material-icons skill-icons">flash_on</i>
-                        <p class="promo-caption">Speeds up development</p>
-                        <p class="light center">We did most of the heavy lifting for you to provide a default stylings
-                            that
-                            incorporate our custom components.</p>
-                    </div>
-                </div>
-                <div class="col m4">
-                    <div class="center promo promo-example">
-                        <i class="material-icons skill-icons">group</i>
-                        <p class="promo-caption">User Experience Focused</p>
-                        <p class="light center">By utilizing elements and principles of Material Design, we were able
-                            to create a
-                            framework that focuses on User Experience.</p>
-                    </div>
-                </div>
-                <div class="col m4">
-                    <div class="center promo promo-example">
-                        <i class="material-icons skill-icons">settings</i>
-                        <p class="promo-caption">Easy to work with</p>
+                        <p class="promo-caption">Results Driven</p>
                         <p class="light center">We have provided detailed documentation as well as specific code
                             examples to help
                             new users get started.</p>
@@ -179,6 +154,61 @@
             </div>
         </div>
     </div>
+
+    <!-- Projects Div -->
+    <div id="projectsCont" class="section grey lighten-4">
+        <div class="row container">
+            <div class="headerContainer">
+                <h2 id="projectsHeader" class="header">Projects</h2>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/atlanta.jpg">
+                            <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="assets/images/atlanta.jpg">
+                            <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contactCont" class="section grey lighten-5">
+        <div class="container">
+            <div class="row">
+                <h2 id="contactHeader" class="header">Contact</h2>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- JQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
