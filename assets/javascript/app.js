@@ -6,6 +6,15 @@ $(document).ready(function () {
 
     $('.parallax').parallax();
 
+    $('#startText').removeClass('hidden');
+    $('#startText').addClass('slideInLeft');
+
+    window.setTimeout(function () {
+        $('#startText2').removeClass('hidden');
+        $('#startText2').addClass('slideIn');
+    }, 1000);
+
+
     $(window).scroll(() => {
         console.log(scrollY);
         if (scrollY > 50) {
@@ -18,7 +27,7 @@ $(document).ready(function () {
 
         if (scrollY > 90) {
             $('#aboutMeHeader, #aboutMeP').removeClass('hidden');
-            $('#aboutMeHeader').addClass('slideIn');
+            $('#aboutMeHeader').addClass('slide2');
             $('#aboutMeP').addClass('slideInLeft');
 
 

@@ -47,10 +47,10 @@ html{
     display: none;
 }
 
-.slideIn{
-  animation-duration: 2s;
-  animation-name: slidein;
-}
+
+
+
+
 
 .slideInLeft{
     animation-duration: 2s;
@@ -69,6 +69,11 @@ html{
     }
 }
 
+.slideIn{
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -77,6 +82,23 @@ html{
 
   to {
     margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.slide2{
+    animation-duration: 2s;
+    animation-name: slide2;
+}
+
+@keyframes slide2 {
+    from {
+    margin-top: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-top: 0%;
     width: 100%;
   }
 }
