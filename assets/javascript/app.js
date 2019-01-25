@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     $('.parallax').parallax();
 
-  
+
     $(window).scroll(() => {
         console.log(scrollY);
         if (scrollY > 50) {
@@ -23,6 +23,16 @@ $(document).ready(function () {
             $('#aboutMeP').addClass('slideUp');
 
 
+        }
+
+        if (scrollY > 1900) {
+            $('#card1').removeClass('hidden').addClass('slideUp');
+            setTimeout(function () { $('#card2').removeClass('hidden').addClass('slideUp') }, 500);
+            setTimeout(function () { $('#card3').removeClass('hidden').addClass('slideUp') }, 1000);
+            setTimeout(function () { $('#card4').removeClass('hidden').addClass('slideUp') }, 1500);
+            setTimeout(function () { $('#card5').removeClass('hidden').addClass('slideUp') }, 2000);
+            setTimeout(function () { $('#card6').removeClass('hidden').addClass('slideUp') }, 2500);
+            setTimeout(function () { $('#card7').removeClass('hidden').addClass('slideUp') }, 3000);
         }
     })
 
