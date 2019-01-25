@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     $('.parallax').parallax();
 
-
+  
     $(window).scroll(() => {
         console.log(scrollY);
         if (scrollY > 50) {
@@ -17,6 +17,13 @@ $(document).ready(function () {
 
         }
 
+        if (scrollY > 90) {
+            $('#aboutMeHeader, #aboutMeP').removeClass('hidden');
+            $('#aboutMeHeader').addClass('slideRight');
+            $('#aboutMeP').addClass('slideUp');
+
+
+        }
     })
 
     // $('#headerName').on('click', () => {

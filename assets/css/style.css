@@ -42,3 +42,7 @@ html{
 #aboutMeHeader, #skillsHeader, #projectsHeader, #contactHeader{
     margin-top: 50px;
 }
+
+.hidden{
+    display: none;
+}
