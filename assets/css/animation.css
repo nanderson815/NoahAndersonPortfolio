@@ -85,8 +85,8 @@ slideUp
 	animation-name: slideUp;
 	-webkit-animation-name: slideUp;	
 
-	animation-duration: 2s;	
-	-webkit-animation-duration: 2s;
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
 
 	animation-timing-function: ease;	
 	-webkit-animation-timing-function: ease;
@@ -147,8 +147,8 @@ slideLeft
 	animation-name: slideLeft;
 	-webkit-animation-name: slideLeft;	
 
-	animation-duration: 2s;	
-	-webkit-animation-duration: 2s;
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
 
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;		
@@ -168,10 +168,10 @@ slideLeft
 	}
 	80%{
 		transform: translateX(-4%);
-	}
+	} 
 	95%{
 		transform: translateX(2%);
-	}			
+	}		
 	100% {
 		transform: translateX(0%);
 	}
@@ -190,9 +190,9 @@ slideLeft
 	80%{
 		-webkit-transform: translateX(-4%);
 	}
-	95%{
+	/* 95%{
 		-webkit-transform: translateX(2%);
-	}			
+	}			 */
 	100% {
 		-webkit-transform: translateX(0%);
 	}
@@ -209,8 +209,8 @@ slideRight
 	animation-name: slideRight;
 	-webkit-animation-name: slideRight;	
 
-	animation-duration: 2s;	
-	-webkit-animation-duration: 2s;
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
 
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;		
