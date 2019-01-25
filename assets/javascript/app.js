@@ -8,21 +8,18 @@ $(document).ready(function () {
 
 
     $(window).scroll(() => {
-        console.log(scrollY);
+        // console.log(scrollY);
         if (scrollY > 50) {
             $('#navBar').addClass('blue darken-4');
 
         } else {
             $('#navBar').removeClass('blue darken-4');
-
         }
 
         if (scrollY > 90) {
             $('#aboutMeHeader, #aboutMeP').removeClass('hidden');
             $('#aboutMeHeader').addClass('slideRight');
             $('#aboutMeP').addClass('slideUp');
-
-
         }
 
         if (scrollY > 1900) {
@@ -33,6 +30,10 @@ $(document).ready(function () {
             setTimeout(function () { $('#card5').removeClass('hidden').addClass('slideUp') }, 2000);
             setTimeout(function () { $('#card6').removeClass('hidden').addClass('slideUp') }, 2500);
             setTimeout(function () { $('#card7').removeClass('hidden').addClass('slideUp') }, 3000);
+        }
+
+        if (scrollY > 3850){
+            $('#contactCard').removeClass('hidden').addClass('bigEntrance');
         }
     })
 

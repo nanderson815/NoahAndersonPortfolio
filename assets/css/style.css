@@ -39,7 +39,7 @@ html{
     overflow: hidden;
 }
 
-#aboutMeHeader, #skillsHeader, #projectsHeader, #contactHeader{
+#aboutMeHeader, #skillsHeader, #projectsHeader,{
     margin-top: 50px;
 }
 
