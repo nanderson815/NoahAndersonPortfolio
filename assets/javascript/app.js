@@ -42,6 +42,8 @@ var data;
 
 $("#submitBtn").on("click", function (event) {
     event.preventDefault();
+    $("#sentMessage").addClass('hidden');
+    $("#loader").removeClass('hidden');
     console.log($('#textarea1').val());
     sender = $('#first_name').val() + " " + $('#last_name').val();
 
@@ -74,8 +76,8 @@ function sendMail() {
         $('#textarea1').val("");
         $('#email').val("");
         // alert('Your mail is sent!');
-        $('#modal1').hide();
-        $('.modal-overlay').hide();
+        $("#loader").addClass('hidden');
+        $("#sentMessage").removeClass('hidden');
     }).fail(function (error) {
         alert('Oops... ' + JSON.stringify(error));
     });
