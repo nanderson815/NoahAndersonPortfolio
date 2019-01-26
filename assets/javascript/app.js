@@ -46,9 +46,10 @@ $(document).ready(function () {
         template_id: 'template_mjYN8BQS',
         user_id: 'user_MXAiEo7cocXKDbNvoFujf',
         template_params: {
-            'from_name': sender,
-            'message_html': message,
-            'reply_to': emailer
+            from_name: sender,
+            message_html: message,
+            from_email: emailer,
+            reply_to: 'nanderson815@gmail.com'
         }
     };
 
@@ -67,6 +68,8 @@ $(document).ready(function () {
         emailer = $('#email').val();
         $('#email').val("");
         console.log(emailer);
+
+        sendMail();
         
     });
 
