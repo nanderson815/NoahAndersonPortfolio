@@ -4,7 +4,7 @@ $('.sidenav').sidenav({
 });
 
 $('.parallax').parallax();
-
+$('.modal').modal();
 
 $(window).scroll(() => {
     // console.log(scrollY);
@@ -73,7 +73,9 @@ function sendMail() {
         $('#last_name').val("");
         $('#textarea1').val("");
         $('#email').val("");
-        alert('Your mail is sent!');
+        // alert('Your mail is sent!');
+        $('#modal1').hide();
+        $('.modal-overlay').hide();
     }).fail(function (error) {
         alert('Oops... ' + JSON.stringify(error));
     });
