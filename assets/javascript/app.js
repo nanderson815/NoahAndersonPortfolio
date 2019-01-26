@@ -32,13 +32,58 @@ $(document).ready(function () {
             setTimeout(function () { $('#card7').removeClass('hidden').addClass('slideUp') }, 3000);
         }
 
-        if (scrollY > 3850){
+        if (scrollY > 3850) {
             $('#contactCard').removeClass('hidden').addClass('bigEntrance');
         }
-    })
+    });
 
-    // $('#headerName').on('click', () => {
-    //     window.scrollTo(0, 0);
-    // });
+    var sender;
+    var message;
+    var emailer;
+
+    var data = {
+        service_id: 'gmail',
+        template_id: 'template_mjYN8BQS',
+        user_id: 'user_MXAiEo7cocXKDbNvoFujf',
+        template_params: {
+            'from_name': sender,
+            'message_html': message,
+            'reply_to': emailer
+        }
+    };
+
+
+    $("#submitBtn").on("click", function (event) {
+        event.preventDefault();
+        sender = $('#first_name').val() + " " + $('#last_name').val();
+        $('#first_name').val("");
+        $('#last_name').val("");
+        console.log(sender);
+
+        message = $('#textarea1').val();
+        $('#textarea1').val("");
+        console.log(message);
+
+        emailer = $('#email').val();
+        $('#email').val("");
+        console.log(emailer);
+        
+    });
+
+
+    function sendMail() {
+        $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+            type: 'POST',
+            data: JSON.stringify(data),
+            contentType: 'application/json'
+        }).done(function () {
+            alert('Your mail is sent!');
+        }).fail(function (error) {
+            alert('Oops... ' + JSON.stringify(error));
+        });
+    }
+
+
+
 
 });
