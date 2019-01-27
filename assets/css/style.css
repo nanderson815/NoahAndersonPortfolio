@@ -11,6 +11,16 @@ html{
     /* z-index:999999999; */
 }
 
+#mobile-menu{
+    /* position: relative; */
+}
+
+#mobileSocialButtons{
+    position: absolute;
+    z-index: 10000;
+    bottom: 7%;
+    left: 7%;
+}
 
 #headerImage{
     height: 100vh;
