@@ -11,10 +11,6 @@ html{
     /* z-index:999999999; */
 }
 
-#mobile-menu{
-    /* position: relative; */
-}
-
 #mobileSocialButtons{
     position: absolute;
     z-index: 10000;
