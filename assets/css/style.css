@@ -33,6 +33,10 @@ html{
     min-height: 100vh;
 }
 
+.card-content{
+    min-height: 165px;
+}
+
 #skillsContainer{
     height: 70vh;
 }
