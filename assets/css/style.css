@@ -69,3 +69,9 @@ html{
 .modal{
     overflow-y: hidden !important;
 }
+
+@media only screen and (min-width: 1600px){
+    #card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8{
+        max-width: 33% !important;
+    }
+}
