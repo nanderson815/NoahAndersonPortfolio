@@ -37,6 +37,14 @@ html{
     min-height: 165px;
 }
 
+.card{
+    overflow-x: hidden;
+}
+
+.card-pic{
+    width: auto !important;
+}
+
 #skillsContainer{
     height: 70vh;
 }

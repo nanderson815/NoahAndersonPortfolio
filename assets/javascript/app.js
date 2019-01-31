@@ -29,6 +29,7 @@ $(window).scroll(() => {
         setTimeout(function () { $('#card5').removeClass('hidden').addClass('slideUp') }, 2000);
         setTimeout(function () { $('#card6').removeClass('hidden').addClass('slideUp') }, 2500);
         setTimeout(function () { $('#card7').removeClass('hidden').addClass('slideUp') }, 3000);
+        setTimeout(function () { $('#card8').removeClass('hidden').addClass('slideUp') }, 3500);
     }
 
     if (scrollY > 3850) {
