@@ -65,3 +65,7 @@ html{
 .hidden{
     display: none;
 }
+
+.modal{
+    overflow-y: hidden !important;
+}
