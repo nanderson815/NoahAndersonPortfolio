@@ -62,12 +62,24 @@ html{
     margin-top: 50px;
 }
 
+#aboutMeHeader, #contactHeader {
+    border-bottom: 1px solid grey;
+}
+
+#aboutMeP{
+    text-align: justify;
+}
+
 .hidden{
     display: none;
 }
 
 .modal{
     overflow-y: hidden !important;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 @media only screen and (min-width: 1600px){
