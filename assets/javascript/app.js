@@ -17,7 +17,7 @@ $(window).scroll(() => {
 
     if (scrollY > 90) {
         $('#aboutMeCard').removeClass('hidden');
-        $('#aboutMeCard').addClass('expandUp');
+        $('#aboutMeCard').addClass('fadeIn');
     }
 
     if (scrollY > 1900) {
