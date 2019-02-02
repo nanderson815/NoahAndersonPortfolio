@@ -16,9 +16,8 @@ $(window).scroll(() => {
     }
 
     if (scrollY > 90) {
-        $('#aboutMeHeader, #aboutMeP').removeClass('hidden');
-        $('#aboutMeHeader').addClass('slideRight');
-        $('#aboutMeP').addClass('slideUp');
+        $('#aboutMeCard').removeClass('hidden');
+        $('#aboutMeCard').addClass('expandUp');
     }
 
     if (scrollY > 1900) {
