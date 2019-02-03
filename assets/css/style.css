@@ -129,20 +129,20 @@ html{
 
 #hexCont5{
     position: absolute;
-    left: 378px;
-    top: 88px;    
+    left: 338px;
+    top: 80px;    
 }
 
 #hexCont6{
     position: absolute;
-    left: 304px;
-    top: -43px;   
+    left: 270px;
+    top: -36px;   
 }
 
 #hexCont7{
     position: absolute;
-    left: 456px;
-    top: -42px;  
+    left: 406px;
+    top: -37px; 
 }
 }
 
@@ -150,28 +150,36 @@ html{
   position: relative;
   width: 125px; 
   height: 72.17px;
-  background-color: #0D47A1;
+  /* background-color: #ffffff; */
   margin: 36.08px 0;
+  border-left: solid 5px #0d47a1;
+  border-right: solid 5px #0d47a1;
 }
 
 .hexagon:before,
 .hexagon:after {
   content: "";
   position: absolute;
-  width: 0;
-  border-left: 62.5px solid transparent;
-  border-right: 62.5px solid transparent;
+  z-index: 1;
+  width: 88.39px;
+  height: 88.39px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 13.3058px;
 }
 
 .hexagon:before {
-  bottom: 100%;
-  border-bottom: 36.08px solid #0D47A1;
+  top: -44.1942px;
+  border-top: solid 7.0711px #0d47a1;
+  border-right: solid 7.0711px #0d47a1;
 }
 
 .hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 36.08px solid #0D47A1;
+  bottom: -44.1942px;
+  border-bottom: solid 7.0711px #0d47a1;
+  border-left: solid 7.0711px #0d47a1;
 }
 
 #hexDiv {
