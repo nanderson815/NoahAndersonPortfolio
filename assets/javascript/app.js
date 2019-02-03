@@ -20,7 +20,7 @@ $(window).scroll(() => {
         $('#aboutMeCard').addClass('fadeIn');
     }
 
-    if (scrollY > 1900) {
+    if (scrollY > 1750) {
         $('#card1').removeClass('hidden').addClass('slideUp');
         setTimeout(function () { $('#card2').removeClass('hidden').addClass('slideUp') }, 500);
         setTimeout(function () { $('#card3').removeClass('hidden').addClass('slideUp') }, 1000);
@@ -31,7 +31,7 @@ $(window).scroll(() => {
         setTimeout(function () { $('#card8').removeClass('hidden').addClass('slideUp') }, 3500);
     }
 
-    if (scrollY > 3850) {
+    if (scrollY > 3480) {
         $('#contactCard').removeClass('hidden').addClass('bigEntrance');
     }
 });
