@@ -31,9 +31,9 @@ $(window).scroll(() => {
         setTimeout(function () { $('#card8').removeClass('hidden').addClass('slideUp') }, 3500);
     }
 
-    if (scrollY > 3480) {
-        $('#contactCard').removeClass('hidden').addClass('bigEntrance');
-    }
+    // if (scrollY > 3480) {
+    //     $('#contactCard').removeClass('hidden').addClass('bigEntrance');
+    // }
 });
 
 var sender;
