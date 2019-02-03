@@ -33,6 +33,10 @@ html{
     min-height: 100vh;
 }
 
+/* #aboutMeCont{
+    background-image: url(../images/atlanta.jpg)
+} */
+
 .card-content{
     min-height: 165px;
 }
