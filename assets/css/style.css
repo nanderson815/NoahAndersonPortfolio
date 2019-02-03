@@ -18,6 +18,14 @@ html{
     left: 11%;
 } */
 
+.container{
+    min-width: 90% !important;
+}
+
+#aboutMeRow{
+    margin: 60px 0px 0px 0px;
+}
+
 #headerImage{
     height: 100vh;
     overflow: hidden;
@@ -50,8 +58,8 @@ html{
     min-width: 100%;
 }
 
-#skillsContainer{
-    height: 70vh;
+#skillsCont{
+    min-height: 100vh;
 }
 .skill-icons{
     font-size: 80px;
