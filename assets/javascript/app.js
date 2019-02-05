@@ -4,12 +4,13 @@ $('.sidenav').sidenav({
 });
 
 $('.parallax').parallax();
+
 $('.modal').modal();
 
-$('.hexagon').hover(function(){
+$('.hexagon').hover(function () {
     $(this).children().addClass('pulse');
-}, function(){
-        $(this).children().removeClass('pulse');
+}, function () {
+    $(this).children().removeClass('pulse');
 });
 
 $(window).scroll(() => {
@@ -43,26 +44,28 @@ var data;
 
 $("#submitBtn").on("click", function (event) {
     event.preventDefault();
-    $("#sentMessage").addClass('hidden');
-    $("#loader").removeClass('hidden');
-    console.log($('#textarea1').val());
-    sender = $('#first_name').val() + " " + $('#last_name').val();
+    if ($('#first_name').val() != "" && $('#email').val() != "" && $('#textarea1').val() != "") {
+        $('#modal1').modal('open');
+        $("#sentMessage").addClass('hidden');
+        $("#loader").removeClass('hidden');
+        console.log($('#textarea1').val());
+        sender = $('#first_name').val() + " " + $('#last_name').val();
 
-    
-    data = {
-        service_id: 'gmail',
-        template_id: 'template_mjYN8BQS',
-        user_id: 'user_MXAiEo7cocXKDbNvoFujf',
-        template_params: {
-            from_name: sender,
-            message_html: $('#textarea1').val(),
-            from_email: $('#email').val(),
-            reply_to: 'nanderson815@gmail.com'
-        }
-    };
 
-    sendMail();
+        data = {
+            service_id: 'gmail',
+            template_id: 'template_mjYN8BQS',
+            user_id: 'user_MXAiEo7cocXKDbNvoFujf',
+            template_params: {
+                from_name: sender,
+                message_html: $('#textarea1').val(),
+                from_email: $('#email').val(),
+                reply_to: 'nanderson815@gmail.com'
+            }
+        };
 
+        sendMail();
+    }
 });
 
 
