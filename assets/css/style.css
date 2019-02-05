@@ -76,6 +76,8 @@ html{
     height: auto;
 }
 
+
+
 #skillsCont{
     min-height: 100vh;
 }
@@ -118,92 +120,96 @@ html{
     }
 }
 
-
-/* Hexagon */
-@media only screen and (min-width: 1000px){
-
-    #hexCont1{
-    position: absolute;
-    left: 67px;
-    top: 80px;
-}
-
-#hexCont3{
-    position: absolute;
-    left: 134px;
-    top: -36px;
-}
-
-#hexCont4{
-    position: absolute;
-    left: 202px;
-    top: 80px;
-}
-
-#hexCont5{
-    position: absolute;
-    left: 338px;
-    top: 80px;    
-}
-
-#hexCont6{
-    position: absolute;
-    left: 270px;
-    top: -36px;   
-}
-
-#hexCont7{
-    position: absolute;
-    left: 406px;
-    top: -37px; 
+@media only screen and (max-width: 600px){
+    #grid {
+    width: 100%;
 }
 }
 
-.hexagon {
-  position: relative;
-  width: 125px; 
-  height: 72.17px;
-  margin: 36.08px 0;
-  border-left: solid 5px #0d47a1;
-  border-right: solid 5px #0d47a1;
+@media only screen and (min-width: 600px){
+    #grid {
+    width: 65%;
+}
 }
 
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 88.39px;
-  height: 88.39px;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background-color: inherit;
-  left: 13.3058px;
-}
 
-.hexagon:before {
-  top: -44.1942px;
-  border-top: solid 7.0711px #0d47a1;
-  border-right: solid 7.0711px #0d47a1;
-}
+/* Hexagons */
 
-.hexagon:after {
-  bottom: -44.1942px;
-  border-bottom: solid 7.0711px #0d47a1;
-  border-left: solid 7.0711px #0d47a1;
-}
-
-#hexDiv {
+#grid {
     position: relative;
-    /* overflow-x: hidden; */
+    margin: 0 auto;
+    padding: 0; /* Clears unordered list default of 40px */
 }
 
-
-
-
-
-.cellText{
-    padding-top: 21px;
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
+#grid li {
+    list-style-type: none;
+    position: relative;
+    float: left;
+    width: 27.85714285714286%;
+    padding: 0 0 32.16760145166612% 0;
+    -o-transform: rotate(-60deg) skewY(30deg);
+    -moz-transform: rotate(-60deg) skewY(30deg);
+    -webkit-transform: rotate(-60deg) skewY(30deg);
+    -ms-transform: rotate(-60deg) skewY(30deg);
+    transform: rotate(-60deg) skewY(30deg);
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#grid li .hexagon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0d47a1;
+    -o-transform: skewY(-30deg) rotate(60deg);
+    -moz-transform: skewY(-30deg) rotate(60deg);
+    -webkit-transform: skewY(-30deg) rotate(60deg);
+    -ms-transform: skewY(-30deg) rotate(60deg);
+    transform: skewY(-30deg) rotate(60deg);
+    overflow: hidden;
+}
+
+#grid li * {
+    visibility: visible;
+}
+
+/* Gives spacing to each hex */
+#grid li:nth-child(3n+2) {
+  margin: 0 1%;
+}
+
+/* Offests rows, adds margin, and scewes each offset row */
+#grid li:nth-child(6n+4), #grid li:nth-child(6n+5), #grid li:nth-child(6n+6) {
+    margin-top: -6.9285714285%;
+    margin-bottom: -6.9285714285%;
+    -o-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    -moz-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    transform: translateX(50%) rotate(-60deg) skewY(30deg);
+}
+
+#grid li:nth-child(6n+4) { 
+    margin-left: 0.5%;
+}
+
+.centerImg {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+  margin-top: 30%;
+}
+
+.shadowed {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
