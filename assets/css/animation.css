@@ -726,7 +726,7 @@ pulse
 ==============================================
 */
 
-.pulse{
+.pulse, .centerImg:hover{
 	animation-name: pulse;
 	-webkit-animation-name: pulse;	
 
