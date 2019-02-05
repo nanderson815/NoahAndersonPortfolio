@@ -26,7 +26,7 @@ $(window).scroll(() => {
         $('#aboutMeCard').addClass('fadeIn');
     }
 
-    if (scrollY > 1750) {
+    if (scrollY > 1550) {
         $('#card1').removeClass('hidden').addClass('slideUp');
         setTimeout(function () { $('#card2').removeClass('hidden').addClass('slideUp') }, 500);
         setTimeout(function () { $('#card3').removeClass('hidden').addClass('slideUp') }, 1000);
