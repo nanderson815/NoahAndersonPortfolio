@@ -6,6 +6,12 @@ $('.sidenav').sidenav({
 $('.parallax').parallax();
 $('.modal').modal();
 
+$('.hexagon').hover(function(){
+    $(this).children().addClass('pulse');
+}, function(){
+        $(this).children().removeClass('pulse');
+});
+
 $(window).scroll(() => {
     // console.log(scrollY);
     if (scrollY > 50) {
