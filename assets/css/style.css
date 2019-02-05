@@ -3,6 +3,22 @@ html{
     scroll-behavior: smooth;
 }
 
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Chivo', sans-serif;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+footer{
+    margin-bottom: -15px;
+}
+
 #headerName{
     font-size: 20px;
 }
@@ -24,10 +40,6 @@ html{
 
 .container{
     min-width: 90% !important;
-}
-
-.headerTxt{
-    font-family: 'Rubik', sans-serif;
 }
 
 #TitleText{
