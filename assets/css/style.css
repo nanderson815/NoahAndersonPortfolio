@@ -95,7 +95,7 @@ footer{
     overflow: hidden;
 }
 
-#aboutMeHeader, #skillsHeader, #projectsHeader,{
+#aboutMeHeader, #skillsHeader, #projectsHeader {
     margin-top: 50px;
 }
 
@@ -120,7 +120,7 @@ footer{
 }
 
 @media only screen and (min-width: 1400px){
-    #card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8{
+    #card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8, #card9{
         max-width: 33% !important;
     }
 }
