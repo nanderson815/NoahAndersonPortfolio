@@ -1,4 +1,9 @@
 
+window.onload = function () {
+    // similar behavior as clicking on a link
+    window.location.href = "https://www.noahanderson.dev/";
+}
+
 $('.sidenav').sidenav({
     draggable: true
 });
