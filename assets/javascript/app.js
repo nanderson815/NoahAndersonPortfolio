@@ -1,9 +1,3 @@
-
-window.onload = function() {
-    // similar behavior as clicking on a link
-    window.location.href = "http://stackoverflow.com";
-}
-
 $('.sidenav').sidenav({
     draggable: true
 });
